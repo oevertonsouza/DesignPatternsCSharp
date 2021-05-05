@@ -4,7 +4,7 @@ Hi my name is Everton, and in this project I aim to use all patterns that I find
 
 ## Ducks Generator
 
-This project is a Duck Generato, it only show some ducks on your console, but using the best patterns and pratices of agile developer.
+This project is a Duck Generator, it only show some ducks on your console, but using the best patterns and pratices of agile developer.
 
 ## Patterns used 
 
