@@ -1,6 +1,6 @@
 # Design Patterns
     
-Hi my name is Everton, and in this project I aim to use all patterns that I find on books and developer comunity.
+Hi my name is Everton and I from Brasil, and in this project I aim to use all patterns that I find on books and developer comunity.
 
 ## Ducks Generator
 
