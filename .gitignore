@@ -360,3 +360,29 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+
+/build/
+*.suo
+*.user
+_ReSharper.*/
+*.sdf
+bin/
+obj/
+Debug/
+Release/
+DucksGenerate/bin/
+DucksGenerate/obj/
+DucksGenerate/Debug/
+DucksGenerate/Release/
+*.opensdf
+*.tlog
+*.log
+TestResult.xml
+*.VisualState.xml
+Version.cs
+Version.h
+Version.cpp
+DucksGenerate/Version.cs
+DucksGenerate/Version.h
+DucksGenerate/Version.cpp
