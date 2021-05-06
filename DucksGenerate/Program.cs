@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Strategy.Ducks;
+using DucksGeneate.Ducks;
 
 
-namespace Strategy
+namespace DucksGeneate
 {
     /*
      * 
-     * This is a prject based from book head first (Design Patterns) 
+     * This is a prject based from books and community examples
      * In this project I created a Strategy pattern 
      * with a litle Factor for created randow ducks
      * and show Ducks on Console
@@ -20,17 +20,15 @@ namespace Strategy
         static void Main(string[] args)
         {
             List<ModelDuck> ducks;
-
-            DuckGeneratior GeradorDePatos = new DuckGeneratior();
-            GeradorDePatos.setAmount(20);
-            ducks = GeradorDePatos.Generate();
+            DuckGenerator ducksGenerator = new DuckGenerator();
+            ducks = ducksGenerator.GetAllDucks();
 
             foreach (var duck in ducks)
             {
                 duck.Show();
             }
 
-            Console.WriteLine("Fim of Strategy!");
+            Console.WriteLine("Final of Strategy!");
         }
 
 

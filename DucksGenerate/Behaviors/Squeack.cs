@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Strategy.Behaviors
+namespace DucksGeneate.Behaviors
 {
-    class Squeack : IQuackBehavior
+    public class Squeack : IQuackBehavior
     {
-        public void quack()
+        public string quack()
         {
-            Console.WriteLine("Squeack");
+            string howToquack = "Squeack";
+            Console.WriteLine(howToquack);
+            return howToquack;
         }
     }
 }

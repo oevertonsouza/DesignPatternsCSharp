@@ -2,3 +2,4 @@ C:\ProjetosDotNetCSharp\DesignPatterns\DucksGenerate\bin\Debug\ConsoleApplicatio
 C:\ProjetosDotNetCSharp\DesignPatterns\DucksGenerate\bin\Debug\ConsoleApplication.pdb
 C:\ProjetosDotNetCSharp\DesignPatterns\DucksGenerate\obj\x86\Debug\ConsoleApplication.exe
 C:\ProjetosDotNetCSharp\DesignPatterns\DucksGenerate\obj\x86\Debug\ConsoleApplication.pdb
+C:\ProjetosDotNetCSharp\DesignPatterns\DucksGenerate\bin\Debug\ConsoleApplication.exe.config

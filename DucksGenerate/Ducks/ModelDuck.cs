@@ -2,37 +2,37 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Strategy.Behaviors;
+using DucksGeneate.Behaviors;
 
-namespace Strategy.Ducks
+namespace DucksGeneate.Ducks
 {
-    abstract class ModelDuck 
+    public abstract class ModelDuck 
     {
         IQuackBehavior quackBehavior = new Quack();
         IFlyBehavior flyBehavior = new FlyWithWings();
 
-        public virtual void display()
+        public virtual string display()
         {
+            string display = "Duck";
             Console.WriteLine("Duck");
-            return;
+            return display;
         }
 
-        public virtual void performQuack()
+        public virtual string performQuack()
         {
-            this.quackBehavior.quack();
-            return;
+            return this.quackBehavior.quack(); ;
         }
 
-        public virtual void performSwim()
+        public virtual string performSwim()
         {
+            string swim = "Can Swim";
             Console.WriteLine("Can Swim");
-            return;
+            return swim;
         }
 
-        public virtual void performFly()
+        public virtual string performFly()
         {
-            this.flyBehavior.fly();
-            return;
+            return this.flyBehavior.fly();
         }
 
         public void setFlyBehavior(IFlyBehavior fb) {
@@ -51,6 +51,11 @@ namespace Strategy.Ducks
             performFly();
             Console.WriteLine("----");
         }
-    
+
+
+        public ModelDuck()
+        {
+            // TODO: Complete member initialization
+        }
     }
 }

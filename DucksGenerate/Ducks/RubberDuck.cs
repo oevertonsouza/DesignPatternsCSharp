@@ -2,31 +2,30 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Strategy.Behaviors;
+using DucksGeneate.Behaviors;
 
-namespace Strategy.Ducks
+namespace DucksGeneate.Ducks
 {
-    class RubberDuck : ModelDuck {
+    public class RubberDuck : ModelDuck {
 
         IQuackBehavior quackBehavior = new Squeack();
         IFlyBehavior flyBehavior = new FlyNoWings();
 
-        public override void display()
+        public override string display()
         {
-            Console.WriteLine("Rubber Duck");
-            return;
+            string display = "Rubber Duck";
+            Console.WriteLine(display);
+            return display;
         }
 
-        public override void performFly()
+        public override string performFly()
         {
-            flyBehavior.fly();
-            return;
+            return flyBehavior.fly(); ;
         }
 
-        public override void performQuack()
+        public override string performQuack()
         {
-            quackBehavior.quack();
-            return;
+            return quackBehavior.quack();
         }
 
     

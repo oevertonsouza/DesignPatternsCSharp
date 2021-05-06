@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Strategy.Ducks
+namespace DucksGeneate.Ducks
 {
-    class MallardDuck : ModelDuck
+    public class MallardDuck : ModelDuck
     {
-        public override void display()
+        public override string display()
         {
-            Console.WriteLine("Mallard Duck");
-            return;
+            string display = "Mallard Duck";
+            Console.WriteLine(display);
+            return display;
         }
 
     }

@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Strategy.Ducks;
+using DucksGeneate.Ducks;
 
-namespace Strategy.Factory
+namespace DucksGeneate.Factory
 {
-    class DuckFactory
+    public class DuckFactory
     {
         public MallardDuck createMallardDuck(){
             return new MallardDuck();

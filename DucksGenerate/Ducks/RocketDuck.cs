@@ -2,24 +2,24 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Strategy.Behaviors;
+using DucksGeneate.Behaviors;
 
-namespace Strategy.Ducks
+namespace DucksGeneate.Ducks
 {
-    class RocketDuck : ModelDuck
+    public class RocketDuck : ModelDuck
     {
         IFlyBehavior flyBehavior = new FlyRocket();
 
-        public override void display()
+        public override string display()
         {
-            Console.WriteLine("Rocket Duck");
-            return;
+            string display = "Rocket Duck";
+            Console.WriteLine(display);
+            return display;
         }
 
-        public override void performFly()
+        public override string performFly()
         {
-            flyBehavior.fly();
-            return;
+            return this.flyBehavior.fly();
         }
 
     }

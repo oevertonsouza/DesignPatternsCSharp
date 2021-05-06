@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Strategy.Behaviors
+namespace DucksGeneate.Behaviors
 {
-    interface IFlyBehavior
+    public interface IFlyBehavior
     {
-        void fly();
+        string fly();
     }
 }

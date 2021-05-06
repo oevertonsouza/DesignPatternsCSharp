@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Strategy.Behaviors
+namespace DucksGeneate.Behaviors
 {
-    class FlyNoWings : IFlyBehavior
+    public class FlyNoWings : IFlyBehavior
     {
-        public void fly()
+        public string fly()
         {
-            Console.WriteLine("Can't Fly");
+            string howToFly = "Can't Fly";
+            Console.WriteLine(howToFly);
+            return howToFly;
         }
     }
 }
