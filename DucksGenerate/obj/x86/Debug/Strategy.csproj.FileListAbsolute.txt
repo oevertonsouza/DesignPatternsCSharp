@@ -1,6 +1,0 @@
-C:\ProjetosDotNetCSharp\Strategy\Strategy\bin\Debug\Strategy.exe
-C:\ProjetosDotNetCSharp\Strategy\Strategy\bin\Debug\Strategy.pdb
-C:\ProjetosDotNetCSharp\Strategy\Strategy\obj\x86\Debug\Strategy.exe
-C:\ProjetosDotNetCSharp\Strategy\Strategy\obj\x86\Debug\Strategy.pdb
-C:\ProjetosDotNetCSharp\DesignPatternsCSharp\DucksGenerate\obj\x86\Debug\Strategy.exe
-C:\ProjetosDotNetCSharp\DesignPatternsCSharp\DucksGenerate\obj\x86\Debug\Strategy.pdb
