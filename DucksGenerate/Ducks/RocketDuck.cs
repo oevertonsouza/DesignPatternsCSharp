@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using DucksGeneate.Behaviors;
+using DucksGenerate.Behaviors;
 
-namespace DucksGeneate.Ducks
+namespace DucksGenerate.Ducks
 {
     public class RocketDuck : ModelDuck
     {
@@ -13,7 +13,6 @@ namespace DucksGeneate.Ducks
         public override string display()
         {
             string display = "Rocket Duck";
-            Console.WriteLine(display);
             return display;
         }
 

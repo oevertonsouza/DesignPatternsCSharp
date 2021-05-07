@@ -2,19 +2,23 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using DucksGeneate.Behaviors;
+using DucksGenerate.Behaviors;
 
-namespace DucksGeneate.Ducks
+namespace DucksGenerate.Ducks
 {
-    public abstract class ModelDuck 
+    public abstract class ModelDuck  
     {
+
+        /* Cherry Cake
+         * Use composition
+         * Created set methods for change behavior in runtime
+         */
         IQuackBehavior quackBehavior = new Quack();
         IFlyBehavior flyBehavior = new FlyWithWings();
 
         public virtual string display()
         {
             string display = "Duck";
-            Console.WriteLine("Duck");
             return display;
         }
 
@@ -26,7 +30,6 @@ namespace DucksGeneate.Ducks
         public virtual string performSwim()
         {
             string swim = "Can Swim";
-            Console.WriteLine("Can Swim");
             return swim;
         }
 
@@ -35,6 +38,10 @@ namespace DucksGeneate.Ducks
             return this.flyBehavior.fly();
         }
 
+        /* Cherry Cake
+         * Use set methods  for change behavior in runtime
+         * A duck can won new skills in your journey
+         */
         public void setFlyBehavior(IFlyBehavior fb) {
             this.flyBehavior  = fb;
         }
@@ -45,17 +52,12 @@ namespace DucksGeneate.Ducks
         }
 
         public void Show() {
-            display();
-            performQuack();
-            performSwim();
-            performFly();
+            Console.WriteLine(display());
+            Console.WriteLine(performQuack());
+            Console.WriteLine(performSwim());
+            Console.WriteLine(performFly());
             Console.WriteLine("----");
         }
 
-
-        public ModelDuck()
-        {
-            // TODO: Complete member initialization
-        }
     }
 }

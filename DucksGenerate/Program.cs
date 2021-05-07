@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using DucksGeneate.Ducks;
+using DucksGenerate.Ducks;
+using DucksGenerate.Factory;
 
 
-namespace DucksGeneate
+namespace DucksGenerate
 {
     /*
      * 
@@ -21,13 +22,28 @@ namespace DucksGeneate
         {
             List<ModelDuck> ducks;
             DuckGenerator ducksGenerator = new DuckGenerator();
-            ducks = ducksGenerator.GetAllDucks();
+
+            ducks = ducksGenerator.GetCountryByCountry(DuckInfo.DuckOrigin.BR);
 
             foreach (var duck in ducks)
             {
                 duck.Show();
             }
 
+            ducks = ducksGenerator.GetCountryByCountry(DuckInfo.DuckOrigin.US);
+
+            foreach (var duck in ducks)
+            {
+                duck.Show();
+            }
+
+            ducks = ducksGenerator.GetCountryByCountry(DuckInfo.DuckOrigin.NONE);
+
+            foreach (var duck in ducks)
+            {
+                duck.Show();
+            }
+            
             Console.WriteLine("Final of Strategy!");
         }
 

@@ -51,13 +51,22 @@
     <Compile Include="Behaviors\MuteQuack.cs" />
     <Compile Include="Behaviors\Quack.cs" />
     <Compile Include="Behaviors\Squeack.cs" />
-    <Compile Include="Ducks\EnumDucks.cs" />
+    <Compile Include="Ducks\BrDucks\BrMallardDuck.cs" />
+    <Compile Include="Ducks\BrDucks\BrRocketDuck.cs" />
+    <Compile Include="Ducks\BrDucks\BrRubberDuck.cs" />
+    <Compile Include="Ducks\DuckInfo.cs" />
+    <Compile Include="Ducks\UsDucks\UsMallardDuck.cs" />
+    <Compile Include="Ducks\UsDucks\UsRocketDuck.cs" />
+    <Compile Include="Ducks\UsDucks\UsRubberDuck.cs" />
     <Compile Include="Ducks\DuckGenerator.cs" />
     <Compile Include="Ducks\MallardDuck.cs" />
     <Compile Include="Ducks\ModelDuck.cs" />
     <Compile Include="Ducks\RocketDuck.cs" />
     <Compile Include="Ducks\RubberDuck.cs" />
+    <Compile Include="Factory\BrDuckFactory.cs" />
+    <Compile Include="Factory\UsDuckFactory.cs" />
     <Compile Include="Factory\DuckFactory.cs" />
+    <Compile Include="Factory\IDuckFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
@@ -73,6 +82,7 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
   <ProjectExtensions>
     <VisualStudio AllowExistingFolder="true" />

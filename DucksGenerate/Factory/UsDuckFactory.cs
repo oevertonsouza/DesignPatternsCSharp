@@ -2,26 +2,27 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using DucksGenerate.Factory;
 using DucksGenerate.Ducks;
+using DucksGenerate.Factory;
+using DucksGenerate.Ducks.UsDucks;
 
-namespace DucksGenerate.Factory
+namespace DucksGenerate.Factory 
 {
-    public class DuckFactory : IDuckFactory
+    public class UsDuckFactory : IDuckFactory
     {
         public ModelDuck createMallardDuck()
         {
-            return new MallardDuck();
+            return new UsMallardDuck();
         }
 
         public ModelDuck createRocketDuck()
         {
-            return new RocketDuck();
+            return new UsRocketDuck();
         }
 
         public ModelDuck createRubberDuck()
         {
-            return new RubberDuck();
+            return new UsRubberDuck();
         }
     }
 }

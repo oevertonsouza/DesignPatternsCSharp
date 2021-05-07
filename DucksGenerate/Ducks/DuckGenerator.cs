@@ -2,39 +2,39 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using DucksGeneate.Factory;
+using DucksGenerate.Factory;
 
-namespace DucksGeneate.Ducks
+namespace DucksGenerate.Ducks
 {
-
-
-    public class DuckGenerator
+    public class DuckGenerator 
     {
-        public enum DuckTypes
-        {
-            ROCKETDUCK = 0,
-            RUBBERDUCK = 1,
-            MALLARDDUCK = 2
-        }
-
-
         private int amount;
         Random range = new Random();
-        DuckFactory duckFactory = new DuckFactory();
-
-        public void setAmount(int amount)
-        {
-            this.amount = amount;
-        }
-         
-        public List<ModelDuck> GetAllDucks()
+        
+        
+        public List<ModelDuck> GetCountryByCountry(string country)
         {
             List<ModelDuck> ducks = new List<ModelDuck>();
-            ducks.Add(duckFactory.createRocketDuck());
-            ducks.Add(duckFactory.createRubberDuck());
-            ducks.Add(duckFactory.createMallardDuck());
+            IDuckFactory duckFactory;
+            switch (country)
+            {
+                case DuckInfo.DuckOrigin.US:
+                    duckFactory = new UsDuckFactory();
+                    break;
+                case DuckInfo.DuckOrigin.BR:
+                    duckFactory = new BrDuckFactory();
+                    break;
+                default:
+                    duckFactory = new DuckFactory();
+                    break;
+            }
+            ducks.Insert(DuckInfo.DuckTypes.MALLARDDUCK, duckFactory.createMallardDuck());
+            ducks.Insert(DuckInfo.DuckTypes.RUBBERDUCK, duckFactory.createRubberDuck());
+            ducks.Insert(DuckInfo.DuckTypes.ROCKETDUCK, duckFactory.createRocketDuck());
             return ducks;
         }
+
+
 
     }
 

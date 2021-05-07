@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace DucksGeneate.Behaviors
+namespace DucksGenerate.Behaviors
 {
     public class Quack : IQuackBehavior
     {
         public string quack()
         {
             string howToquack = "Quack";
-            Console.WriteLine(howToquack);
             return howToquack;
         }
 

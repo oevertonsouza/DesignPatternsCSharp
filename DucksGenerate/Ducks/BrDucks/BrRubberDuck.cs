@@ -4,29 +4,35 @@ using System.Linq;
 using System.Text;
 using DucksGenerate.Behaviors;
 
-namespace DucksGenerate.Ducks
+namespace DucksGenerate.Ducks.BrDucks
 {
-    public class RubberDuck : ModelDuck {
+    public class BrRubberDuck : ModelDuck {
+
+        string origin = DuckInfo.DuckOrigin.BR;
 
         IQuackBehavior quackBehavior = new Squeack();
         IFlyBehavior flyBehavior = new FlyNoWings();
 
         public override string display()
         {
-            string display = "Rubber Duck";
+            string display = "Rubber Duck " + origin;
             return display;
+        }
+
+        public override string performSwim()
+        {
+            return base.performSwim() + " " + origin;
         }
 
         public override string performFly()
         {
-            return flyBehavior.fly(); ;
+            return flyBehavior.fly() + " " + origin;
         }
 
         public override string performQuack()
         {
-            return quackBehavior.quack();
+            return quackBehavior.quack() + " " + origin;
         }
-
     
     }
 }
