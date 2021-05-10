@@ -4,7 +4,7 @@ Hi my name is Everton, I from Brasil, and in this project I aim to use all patte
 
 ## Ducks Generator
 
-This project is a Duck Generator, it only show some ducks on your console, but using the best patterns and pratices of agile developer.
+This project is a Duck Generator, it only show some ducks on your console, but using the best patterns and pratices of agile development.
 
 ## Patterns used Plugin
 Plugin
