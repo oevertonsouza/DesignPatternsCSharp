@@ -9,42 +9,35 @@ using DucksGenerate.Factory;
 namespace DucksGenerate
 {
     /*
-     * 
      * This is a prject based from books and community examples
      * In this project I created a Strategy pattern 
      * with a litle Factor for created randow ducks
      * and show Ducks on Console
-     * 
      */
     class Program
     {
         static void Main(string[] args)
         {
-            List<ModelDuck> ducks;
+            List<ModelDuck> ducks, ducksFromBR, ducksFromUS;
             DuckGenerator ducksGenerator = new DuckGenerator();
 
-            ducks = ducksGenerator.GetCountryByCountry(DuckInfo.DuckOrigin.BR);
-
-            foreach (var duck in ducks)
-            {
-                duck.Show();
-            }
-
-            ducks = ducksGenerator.GetCountryByCountry(DuckInfo.DuckOrigin.US);
-
-            foreach (var duck in ducks)
-            {
-                duck.Show();
-            }
-
             ducks = ducksGenerator.GetCountryByCountry(DuckInfo.DuckOrigin.NONE);
+            ducksFromBR = ducksGenerator.GetCountryByCountry(DuckInfo.DuckOrigin.BR);
+            ducksFromUS = ducksGenerator.GetCountryByCountry(DuckInfo.DuckOrigin.US);
 
+            DucksShowList(ducks);
+            DucksShowList(ducksFromBR);
+            DucksShowList(ducksFromUS);
+            
+            Console.WriteLine("Final of Project!");
+        }
+
+        public static void DucksShowList(List<ModelDuck> ducks)
+        {
             foreach (var duck in ducks)
             {
                 duck.Show();
             }
-            
-            Console.WriteLine("Final of Strategy!");
         }
 
 

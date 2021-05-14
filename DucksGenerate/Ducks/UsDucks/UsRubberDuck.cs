@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using DucksGenerate.Behaviors;
+using DucksGenerate.Ducks.Command;
 
 namespace DucksGenerate.Ducks.UsDucks
 {
@@ -13,23 +14,33 @@ namespace DucksGenerate.Ducks.UsDucks
         IQuackBehavior quackBehavior = new Squeack();
         IFlyBehavior flyBehavior = new FlyNoWings();
 
-        public override string display()
+        public UsRubberDuck(){
+            /* Cherry Cake
+             * We can see that we have many RubberDucks 
+             * from diference countries, and each one of them
+             * can obtais difence behaviors, 
+             * in these example they will haves the same.
+             */
+            base.showCommand = new RubberShowCommand(this);
+        }
+
+        public override string Display()
         {
             string display = "Rubber Duck " + origin;
             return display;
         }
 
-        public override string performSwim()
+        public override string PerformSwim()
         {
-            return base.performSwim() + " " + origin;
+            return base.PerformSwim() + " " + origin;
         }
 
-        public override string performFly()
+        public override string PerformFly()
         {
             return flyBehavior.fly() + " " + origin;
         }
 
-        public override string performQuack()
+        public override string PerformQuack()
         {
             return quackBehavior.quack() + " " + origin;
         }

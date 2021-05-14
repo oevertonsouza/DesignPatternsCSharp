@@ -54,6 +54,9 @@
     <Compile Include="Ducks\BrDucks\BrMallardDuck.cs" />
     <Compile Include="Ducks\BrDucks\BrRocketDuck.cs" />
     <Compile Include="Ducks\BrDucks\BrRubberDuck.cs" />
+    <Compile Include="Ducks\Command\RubberShowCommand.cs" />
+    <Compile Include="Ducks\Command\DuckShowCommand.cs" />
+    <Compile Include="Ducks\Command\ICommand.cs" />
     <Compile Include="Ducks\DuckInfo.cs" />
     <Compile Include="Ducks\UsDucks\UsMallardDuck.cs" />
     <Compile Include="Ducks\UsDucks\UsRocketDuck.cs" />

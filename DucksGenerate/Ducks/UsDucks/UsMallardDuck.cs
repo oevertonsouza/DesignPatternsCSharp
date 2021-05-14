@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using DucksGenerate.Ducks;
+using DucksGenerate.Ducks.Command;
 
 namespace DucksGenerate.Ducks.UsDucks
 {
@@ -10,25 +11,25 @@ namespace DucksGenerate.Ducks.UsDucks
     {
         string origin = DuckInfo.DuckOrigin.US;
 
-        public override string display()
+        public override string Display()
         {
             string display = "Mallard Duck " + origin;
             return display;
         }
 
-        public override string performSwim()
+        public override string PerformSwim()
         {
-            return base.performSwim() + " " + origin;
+            return base.PerformSwim() + " " + origin;
         }
 
-        public override string performQuack()
+        public override string PerformQuack()
         {
-            return base.performQuack() + " " + origin;
+            return base.PerformQuack() + " " + origin;
         }
 
-        public override string performFly()
+        public override string PerformFly()
         {
-            return base.performFly() + " " + origin;
+            return base.PerformFly() + " " + origin;
         }
         
     }

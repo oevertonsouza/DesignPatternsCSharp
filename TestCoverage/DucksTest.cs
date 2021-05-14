@@ -18,18 +18,17 @@ namespace CoverageTest
            DuckGenerator duckGenerator = new DuckGenerator();
            ducks = duckGenerator.GetCountryByCountry(DuckInfo.DuckOrigin.NONE);
 
-           Assert.AreEqual(ducks[DuckInfo.DuckTypes.MALLARDDUCK].performFly(), "Can Fly");
-           Assert.AreEqual(ducks[DuckInfo.DuckTypes.MALLARDDUCK].performSwim(), "Can Swim");
-           Assert.AreEqual(ducks[DuckInfo.DuckTypes.MALLARDDUCK].performQuack(), "Quack");
+           Assert.AreEqual(ducks[DuckInfo.DuckTypes.MALLARDDUCK].PerformFly(), "Can Fly");
+           Assert.AreEqual(ducks[DuckInfo.DuckTypes.MALLARDDUCK].PerformSwim(), "Can Swim");
+           Assert.AreEqual(ducks[DuckInfo.DuckTypes.MALLARDDUCK].PerformQuack(), "Quack");
            
-           Assert.AreEqual(ducks[DuckInfo.DuckTypes.RUBBERDUCK].performFly(), "Can't Fly");
-           Assert.AreEqual(ducks[DuckInfo.DuckTypes.RUBBERDUCK].performSwim(), "Can Swim");
-           Assert.AreEqual(ducks[DuckInfo.DuckTypes.RUBBERDUCK].performQuack(), "Squeack");
+           Assert.AreEqual(ducks[DuckInfo.DuckTypes.RUBBERDUCK].PerformFly(), "Can't Fly");
+           Assert.AreEqual(ducks[DuckInfo.DuckTypes.RUBBERDUCK].PerformSwim(), "Can Swim");
+           Assert.AreEqual(ducks[DuckInfo.DuckTypes.RUBBERDUCK].PerformQuack(), "Squeack");
            
-           Assert.AreEqual(ducks[DuckInfo.DuckTypes.ROCKETDUCK].performFly(), "Go To Stars!!!");
-           Assert.AreEqual(ducks[DuckInfo.DuckTypes.ROCKETDUCK].performSwim(), "Can Swim");
-           Assert.AreEqual(ducks[DuckInfo.DuckTypes.ROCKETDUCK].performQuack(), "Quack");
-
+           Assert.AreEqual(ducks[DuckInfo.DuckTypes.ROCKETDUCK].PerformFly(), "Go To Stars!!!");
+           Assert.AreEqual(ducks[DuckInfo.DuckTypes.ROCKETDUCK].PerformSwim(), "Can Swim");
+           Assert.AreEqual(ducks[DuckInfo.DuckTypes.ROCKETDUCK].PerformQuack(), "Quack");
         }
 
         [TestMethod]
@@ -39,17 +38,17 @@ namespace CoverageTest
             DuckGenerator duckGenerator = new DuckGenerator();
             ducks = duckGenerator.GetCountryByCountry(DuckInfo.DuckOrigin.US);
 
-            Assert.AreEqual(ducks[DuckInfo.DuckTypes.MALLARDDUCK].performFly(), "Can Fly" + " " + DuckInfo.DuckOrigin.US);
-            Assert.AreEqual(ducks[DuckInfo.DuckTypes.MALLARDDUCK].performSwim(), "Can Swim" + " " + DuckInfo.DuckOrigin.US);
-            Assert.AreEqual(ducks[DuckInfo.DuckTypes.MALLARDDUCK].performQuack(), "Quack" + " " + DuckInfo.DuckOrigin.US);
+            Assert.AreEqual(ducks[DuckInfo.DuckTypes.MALLARDDUCK].PerformFly(), "Can Fly" + " " + DuckInfo.DuckOrigin.US);
+            Assert.AreEqual(ducks[DuckInfo.DuckTypes.MALLARDDUCK].PerformSwim(), "Can Swim" + " " + DuckInfo.DuckOrigin.US);
+            Assert.AreEqual(ducks[DuckInfo.DuckTypes.MALLARDDUCK].PerformQuack(), "Quack" + " " + DuckInfo.DuckOrigin.US);
 
-            Assert.AreEqual(ducks[DuckInfo.DuckTypes.RUBBERDUCK].performFly(), "Can't Fly" + " " + DuckInfo.DuckOrigin.US);
-            Assert.AreEqual(ducks[DuckInfo.DuckTypes.RUBBERDUCK].performSwim(), "Can Swim" + " " + DuckInfo.DuckOrigin.US);
-            Assert.AreEqual(ducks[DuckInfo.DuckTypes.RUBBERDUCK].performQuack(), "Squeack" + " " + DuckInfo.DuckOrigin.US);
+            Assert.AreEqual(ducks[DuckInfo.DuckTypes.RUBBERDUCK].PerformFly(), "Can't Fly" + " " + DuckInfo.DuckOrigin.US);
+            Assert.AreEqual(ducks[DuckInfo.DuckTypes.RUBBERDUCK].PerformSwim(), "Can Swim" + " " + DuckInfo.DuckOrigin.US);
+            Assert.AreEqual(ducks[DuckInfo.DuckTypes.RUBBERDUCK].PerformQuack(), "Squeack" + " " + DuckInfo.DuckOrigin.US);
 
-            Assert.AreEqual(ducks[DuckInfo.DuckTypes.ROCKETDUCK].performFly(), "Go To Stars!!!" + " " + DuckInfo.DuckOrigin.US);
-            Assert.AreEqual(ducks[DuckInfo.DuckTypes.ROCKETDUCK].performSwim(), "Can Swim" + " " + DuckInfo.DuckOrigin.US);
-            Assert.AreEqual(ducks[DuckInfo.DuckTypes.ROCKETDUCK].performQuack(), "Quack" + " " + DuckInfo.DuckOrigin.US);
+            Assert.AreEqual(ducks[DuckInfo.DuckTypes.ROCKETDUCK].PerformFly(), "Go To Stars!!!" + " " + DuckInfo.DuckOrigin.US);
+            Assert.AreEqual(ducks[DuckInfo.DuckTypes.ROCKETDUCK].PerformSwim(), "Can Swim" + " " + DuckInfo.DuckOrigin.US);
+            Assert.AreEqual(ducks[DuckInfo.DuckTypes.ROCKETDUCK].PerformQuack(), "Quack" + " " + DuckInfo.DuckOrigin.US);
 
         }
 
@@ -60,17 +59,17 @@ namespace CoverageTest
             DuckGenerator duckGenerator = new DuckGenerator();
             ducks = duckGenerator.GetCountryByCountry(DuckInfo.DuckOrigin.BR);
 
-            Assert.AreEqual(ducks[DuckInfo.DuckTypes.MALLARDDUCK].performFly(), "Can Fly" + " " + DuckInfo.DuckOrigin.BR);
-            Assert.AreEqual(ducks[DuckInfo.DuckTypes.MALLARDDUCK].performSwim(), "Can Swim" + " " + DuckInfo.DuckOrigin.BR);
-            Assert.AreEqual(ducks[DuckInfo.DuckTypes.MALLARDDUCK].performQuack(), "Quack" + " " + DuckInfo.DuckOrigin.BR);
+            Assert.AreEqual(ducks[DuckInfo.DuckTypes.MALLARDDUCK].PerformFly(), "Can Fly" + " " + DuckInfo.DuckOrigin.BR);
+            Assert.AreEqual(ducks[DuckInfo.DuckTypes.MALLARDDUCK].PerformSwim(), "Can Swim" + " " + DuckInfo.DuckOrigin.BR);
+            Assert.AreEqual(ducks[DuckInfo.DuckTypes.MALLARDDUCK].PerformQuack(), "Quack" + " " + DuckInfo.DuckOrigin.BR);
 
-            Assert.AreEqual(ducks[DuckInfo.DuckTypes.RUBBERDUCK].performFly(), "Can't Fly" + " " + DuckInfo.DuckOrigin.BR);
-            Assert.AreEqual(ducks[DuckInfo.DuckTypes.RUBBERDUCK].performSwim(), "Can Swim" + " " + DuckInfo.DuckOrigin.BR);
-            Assert.AreEqual(ducks[DuckInfo.DuckTypes.RUBBERDUCK].performQuack(), "Squeack" + " " + DuckInfo.DuckOrigin.BR);
+            Assert.AreEqual(ducks[DuckInfo.DuckTypes.RUBBERDUCK].PerformFly(), "Can't Fly" + " " + DuckInfo.DuckOrigin.BR);
+            Assert.AreEqual(ducks[DuckInfo.DuckTypes.RUBBERDUCK].PerformSwim(), "Can Swim" + " " + DuckInfo.DuckOrigin.BR);
+            Assert.AreEqual(ducks[DuckInfo.DuckTypes.RUBBERDUCK].PerformQuack(), "Squeack" + " " + DuckInfo.DuckOrigin.BR);
 
-            Assert.AreEqual(ducks[DuckInfo.DuckTypes.ROCKETDUCK].performFly(), "Go To Stars!!!" + " " + DuckInfo.DuckOrigin.BR);
-            Assert.AreEqual(ducks[DuckInfo.DuckTypes.ROCKETDUCK].performSwim(), "Can Swim" + " " + DuckInfo.DuckOrigin.BR);
-            Assert.AreEqual(ducks[DuckInfo.DuckTypes.ROCKETDUCK].performQuack(), "Quack" + " " + DuckInfo.DuckOrigin.BR);
+            Assert.AreEqual(ducks[DuckInfo.DuckTypes.ROCKETDUCK].PerformFly(), "Go To Stars!!!" + " " + DuckInfo.DuckOrigin.BR);
+            Assert.AreEqual(ducks[DuckInfo.DuckTypes.ROCKETDUCK].PerformSwim(), "Can Swim" + " " + DuckInfo.DuckOrigin.BR);
+            Assert.AreEqual(ducks[DuckInfo.DuckTypes.ROCKETDUCK].PerformQuack(), "Quack" + " " + DuckInfo.DuckOrigin.BR);
 
         }
 

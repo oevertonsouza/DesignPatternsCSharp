@@ -10,13 +10,13 @@ namespace DucksGenerate.Ducks
     {
         IFlyBehavior flyBehavior = new FlyRocket();
 
-        public override string display()
+        public override string Display()
         {
             string display = "Rocket Duck";
             return display;
         }
 
-        public override string performFly()
+        public override string PerformFly()
         {
             return this.flyBehavior.fly();
         }

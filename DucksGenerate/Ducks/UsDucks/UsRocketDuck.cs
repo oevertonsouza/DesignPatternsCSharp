@@ -12,25 +12,25 @@ namespace DucksGenerate.Ducks.UsDucks
 
         IFlyBehavior flyBehavior = new FlyRocket();
 
-        public override string display()
+        public override string Display()
         {
             string display = "Rocket Duck " + origin;
             return display;
         }
 
-        public override string performSwim()
+        public override string PerformSwim()
         {
-            return base.performSwim() + " " + origin;
+            return base.PerformSwim() + " " + origin;
         }
 
-        public override string performFly()
+        public override string PerformFly()
         {
             return this.flyBehavior.fly() + " " + origin;
         }
 
-        public override string performQuack()
+        public override string PerformQuack()
         {
-            return base.performQuack() + " " + origin;
+            return base.PerformQuack() + " " + origin;
         }
 
     }

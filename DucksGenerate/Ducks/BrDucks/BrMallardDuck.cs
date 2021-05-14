@@ -9,25 +9,25 @@ namespace DucksGenerate.Ducks.BrDucks
     {
         string origin = DuckInfo.DuckOrigin.BR;
 
-        public override string display()
+        public override string Display()
         {
             string display = "Mallard Duck " + origin;
             return display;
         }
 
-        public override string performSwim()
+        public override string PerformSwim()
         {
-            return base.performSwim() + " " + origin;
+            return base.PerformSwim() + " " + origin;
         }
 
-        public override string performQuack()
+        public override string PerformQuack()
         {
-            return base.performQuack() + " " + origin;
+            return base.PerformQuack() + " " + origin;
         }
 
-        public override string performFly()
+        public override string PerformFly()
         {
-            return base.performFly() + " " + origin;
+            return base.PerformFly() + " " + origin;
         }
 
     }

@@ -7,7 +7,7 @@ namespace DucksGenerate.Ducks
 {
     public class MallardDuck : ModelDuck
     {
-        public override string display()
+        public override string Display()
         {
             string display = "Mallard Duck";
             return display;
