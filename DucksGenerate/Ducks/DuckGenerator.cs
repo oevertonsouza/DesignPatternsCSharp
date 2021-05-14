@@ -14,6 +14,13 @@ namespace DucksGenerate.Ducks
         
         public List<ModelDuck> GetCountryByCountry(string country)
         {
+            /*
+             * Icing on the cake 
+             * Like Uncle Bob said once about Swich Cases on the Code Clean Book
+             * Its can appear only once and should by hidden of the process
+             * Its can increase exponentially - If you can to use other way, make it
+             */
+
             List<ModelDuck> ducks = new List<ModelDuck>();
             IDuckFactory duckFactory;
             switch (country)

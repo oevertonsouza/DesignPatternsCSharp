@@ -15,7 +15,7 @@ namespace DucksGenerate.Ducks.Command
             this.modelDuck = modelDuck;
         }
 
-        /* Cherry Cake
+        /* Icing on the cake
         *  He's embarrassed of not know fly 
         */
         public void Execute() { 

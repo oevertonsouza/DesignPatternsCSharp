@@ -6,7 +6,7 @@ using System.Text;
 
 namespace DucksGenerate.Ducks.Command
 {
-    /* Cherry Cake
+    /* Icing on the cake
      * Is this a Command interface 
      * All Command classes implements a execute method
      * This created a flexive way for execute difence behaviors with the same way

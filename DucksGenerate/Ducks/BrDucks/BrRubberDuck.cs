@@ -16,7 +16,7 @@ namespace DucksGenerate.Ducks.BrDucks
 
         public BrRubberDuck()
         {
-            /* Cherry Cake
+            /* Icing on the cake
              * We can see that we have many RubberDucks 
              * from diference countries, and each one of them
              * can obtais difence behaviors, 

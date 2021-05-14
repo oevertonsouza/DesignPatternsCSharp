@@ -9,7 +9,7 @@ namespace DucksGenerate.Ducks
 {
     public abstract class ModelDuck  
     {
-        /* Cherry Cake
+        /* Icing on the cake
          * Use composition
          * Created set methods for change behavior in runtime
          */
@@ -18,7 +18,7 @@ namespace DucksGenerate.Ducks
         public ICommand showCommand  {get; set;}
 
         public ModelDuck() {
-            /* Cherry Cake
+            /* Icing on the cake
              * The command is on costructor 
              * but can to by changed in run time
              */
@@ -47,7 +47,7 @@ namespace DucksGenerate.Ducks
             return this.flyBehavior.fly();
         }
 
-        /* Cherry Cake
+        /* Icing on the cake
          * Use set methods for change behavior in runtime
          * A duck can won new skills in your journey
          */

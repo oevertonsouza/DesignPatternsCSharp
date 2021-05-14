@@ -15,7 +15,7 @@ namespace DucksGenerate.Ducks.UsDucks
         IFlyBehavior flyBehavior = new FlyNoWings();
 
         public UsRubberDuck(){
-            /* Cherry Cake
+            /* Icing on the cake
              * We can see that we have many RubberDucks 
              * from diference countries, and each one of them
              * can obtais difence behaviors, 

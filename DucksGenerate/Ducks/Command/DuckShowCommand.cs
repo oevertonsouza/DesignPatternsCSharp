@@ -15,7 +15,7 @@ namespace DucksGenerate.Ducks.Command
             this.modelDuck = modelDuck;
         }
 
-        /* Cherry Cake
+        /* Icing on the cake
         * I can to create a diferent class Command
         * for have a many way of to show the behaviors
         * See the RubberShowCommand
