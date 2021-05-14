@@ -23,7 +23,7 @@ Find in all project "Icing on the cake" and read the comments on the reasons tha
 I Created  ducks classes using interfaces and composition classes reducing coupling and dependence for herance this is strategy
 
 **2 Step** 
-I needed a motive for use Facory and Abstracty Factory, so i used a ducks generator for generate a some ducks, after this,
+I needed a motive for use Factory and Abstracty Factory, so i used a ducks generator for generate a some ducks, after this,
 I created too a difference behavior of the ducks by countries, this force me to created a good way for use to same classes,
 but with resilience way, with this, i can add more ducks and your diferences behavior whithout so more problems.
 
