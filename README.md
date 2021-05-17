@@ -15,7 +15,8 @@ Find in all project "Icing on the cake" and read the comments on the reasons tha
 - Strategy          - Reference, Head First Book "Design Patterns"
 - Factory           - References, Head First Book "Design Patterns" and https://refactoring.guru/pt-br/design-patterns
 - Abstract Factory  - References, Head First Book "Design Patterns" and https://refactoring.guru/pt-br/design-patterns
-- Command           - References https://refactoring.guru/pt-br/design-patterns/command
+- Command           - Reference, https://refactoring.guru/pt-br/design-patterns/command
+- Iterator          - Reference, Head First Book brasilian version 2° Edition
 
 ## Steps
 
@@ -34,6 +35,10 @@ Oh God! Where is the tests! I maked a tests for to test ducks behavior in your d
 I thought a good way to use Command Pattern would be to created a diference ways of the show duck behaviors on console.
 I created a Command interface and ShowCommand Classes with your behaviors, with this I can to use command pattern and to have a resilience way,
 to keep many show way.
+
+**5 Step**
+For To implement Iterator Pattern, in my project I was already using a list of ducks for show your behaviors on console, now, I run my list using Iterator Pattern
+This patterns seems not coused obvious effect, but you can modify your list type, or your source data, and all clients of your object not will afected.
 
 
 To By Continue!
