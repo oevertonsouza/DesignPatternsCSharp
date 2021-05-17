@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using DucksGenerate.Ducks;
 using DucksGenerate.Factory;
-
+using DucksGenerate.Ducks.Iterator;
 
 namespace DucksGenerate
 {
@@ -18,7 +18,7 @@ namespace DucksGenerate
     {
         static void Main(string[] args)
         {
-            List<ModelDuck> ducks, ducksFromBR, ducksFromUS;
+            DuckIterator ducks, ducksFromBR, ducksFromUS;
             DuckGenerator ducksGenerator = new DuckGenerator();
 
             ducks = ducksGenerator.GetCountryByCountry(DuckInfo.DuckOrigin.NONE);
@@ -32,12 +32,17 @@ namespace DucksGenerate
             Console.WriteLine("Final of Project!");
         }
 
-        public static void DucksShowList(List<ModelDuck> ducks)
+        public static void DucksShowList(DuckIterator ducks)
         {
-            foreach (var duck in ducks)
-            {
+            /* 
+             * Icing on the cake 
+             * Using Duck Iterator
+             */
+            while (ducks.HasNext())
+	        {
+                ModelDuck duck = (ModelDuck)ducks.GetNext();
                 duck.Show();
-            }
+	        }
         }
 
 

@@ -58,6 +58,8 @@
     <Compile Include="Ducks\Command\DuckShowCommand.cs" />
     <Compile Include="Ducks\Command\ICommand.cs" />
     <Compile Include="Ducks\DuckInfo.cs" />
+    <Compile Include="Ducks\Iterator\DuckIterator.cs" />
+    <Compile Include="Ducks\Iterator\IIterator.cs" />
     <Compile Include="Ducks\UsDucks\UsMallardDuck.cs" />
     <Compile Include="Ducks\UsDucks\UsRocketDuck.cs" />
     <Compile Include="Ducks\UsDucks\UsRubberDuck.cs" />
