@@ -17,7 +17,7 @@ namespace CoverageTest
         {
             DuckIterator ducks;
             DuckGenerator duckGenerator = new DuckGenerator();
-            ducks = duckGenerator.GetCountryByCountry(DuckInfo.DuckOrigin.NONE);
+            ducks = duckGenerator.GetDucksByCountry(DuckInfo.DuckOrigin.NONE);
 
             ModelDuck mallardDuck = (ModelDuck)ducks.GetNext();
             Assert.AreEqual(mallardDuck.PerformFly(), "Can Fly");
@@ -40,7 +40,7 @@ namespace CoverageTest
         {
             DuckIterator ducks;
             DuckGenerator duckGenerator = new DuckGenerator();
-            ducks = duckGenerator.GetCountryByCountry(DuckInfo.DuckOrigin.BR);
+            ducks = duckGenerator.GetDucksByCountry(DuckInfo.DuckOrigin.BR);
 
             ModelDuck mallardDuckBR = (ModelDuck)ducks.GetNext();
             Assert.AreEqual(mallardDuckBR.PerformFly(), "Can Fly" + " " + DuckInfo.DuckOrigin.BR);
@@ -64,7 +64,7 @@ namespace CoverageTest
         {
             DuckIterator ducks;
             DuckGenerator duckGenerator = new DuckGenerator();
-            ducks = duckGenerator.GetCountryByCountry(DuckInfo.DuckOrigin.US);
+            ducks = duckGenerator.GetDucksByCountry(DuckInfo.DuckOrigin.US);
 
             ModelDuck mallardDuckUS = (ModelDuck)ducks.GetNext();
             Assert.AreEqual(mallardDuckUS.PerformFly(), "Can Fly" + " " + DuckInfo.DuckOrigin.US);

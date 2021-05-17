@@ -9,7 +9,7 @@ namespace DucksGenerate.Ducks
 {
     public class DuckGenerator 
     {
-        public DuckIterator GetCountryByCountry(string country)
+        public DuckIterator GetDucksByCountry(string country)
         {
             /*
              * Icing on the cake 

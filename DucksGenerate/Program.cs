@@ -21,9 +21,9 @@ namespace DucksGenerate
             DuckIterator ducks, ducksFromBR, ducksFromUS;
             DuckGenerator ducksGenerator = new DuckGenerator();
 
-            ducks = ducksGenerator.GetCountryByCountry(DuckInfo.DuckOrigin.NONE);
-            ducksFromBR = ducksGenerator.GetCountryByCountry(DuckInfo.DuckOrigin.BR);
-            ducksFromUS = ducksGenerator.GetCountryByCountry(DuckInfo.DuckOrigin.US);
+            ducks = ducksGenerator.GetDucksByCountry(DuckInfo.DuckOrigin.NONE);
+            ducksFromBR = ducksGenerator.GetDucksByCountry(DuckInfo.DuckOrigin.BR);
+            ducksFromUS = ducksGenerator.GetDucksByCountry(DuckInfo.DuckOrigin.US);
 
             DucksShowList(ducks);
             DucksShowList(ducksFromBR);
